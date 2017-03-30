@@ -1,6 +1,7 @@
 body {
-  background-color: rgb(153, 204, 204);
   font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  background-color: rgb(153, 204, 204);
 }
 
 
@@ -9,9 +10,11 @@ body {
   .nav-bar-container {
     display: flex;
     flex-direction: row;
+    width: 100%;
     height: 65px;
     background-color: black;
     align-items: center;
+    margin: 10px 0;
     .ship-container {
       background-color: black;
       height: 100%;
@@ -45,7 +48,7 @@ body {
     }
 
     .nav-button-container {
-      width: 50%;
+      width: 60%;
       height: 40px;
       background-color: black;
       display: flex;
@@ -56,41 +59,116 @@ body {
 
   }
 
-  .bigship-container {
-    display: flex;
-    justify-content: center;
-    .big-ship-logo {
-      background-image: url("/assets/ship.svg");
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: cover;
-      height: 250px;
-      width: 300px;
-    }
-  }
-
-  .text-container {
-    height: 200px;
-    .text1 {
-      font-weight: lighter;
-      font-size: 22px;
-      text-align: center;
-
-      span {
-        font-weight: bold;
+  .block-container {
+    background-color: rgb(153, 204, 204);
+    // margin: 10px 0px;
+    height: 580px;
+    .bigship-container {
+      display: flex;
+      justify-content: center;
+      .big-ship-logo {
+        background-image: url("/assets/ship.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 250px;
+        width: 300px;
       }
     }
+
+    .text-container {
+      height: 200px;
+      .text1 {
+        font-weight: lighter;
+        font-size: 22px;
+        text-align: center;
+
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+
+    .find-out-more {
+      display: flex;
+      background-color: rgb(102, 102, 102);
+      justify-content: center;
+      color: white;
+      height: 70px;
+      width: 80%;
+      margin: auto;
+      font-size: 20px;
+      font-weight: lighter;
+    }
   }
 
-  .find-out-more {
+.block-container-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  height: 900px;
+
+  .container1 {
     display: flex;
+    flex-direction: column;
     background-color: rgb(102, 102, 102);
-    justify-content: center;
-    color: white;
-    height: 70px;
-    width: 80%;
-    margin: auto;
+    height: 300px;
+    width: 70%;
+    align-items: center;
+    .moon-text {
+      background-color: tomato;
+      color: white;
+      font-weight: heavy;
+      font-size: 30px;
+      width: 50%;
+
+    }
+    .price {
+      background-color: blue;
+      height: 200px;
+      width: 100%;
+      color: white;
+      text-align: center;
+    }
+    .details1 {
+
+    }
+
   }
+
+  .container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: pink;
+    height:300px;
+    width: 70%;
+    .moon-text2 {
+      background-color: green;
+      font-weight: heavy;
+      color: white;
+      font-size:30px;
+      width: 50%;
+    }
+    .price2 {
+      background-color: blue;
+      height: 200px;
+      width: 100%;
+      color: white;
+      text-align: center;
+    }
+    .details2 {
+
+    }
+  }
+  .container3 {
+    background-color: green;
+    height: 100px;
+    width: 100%;
+  }
+}
+
 
 
 
